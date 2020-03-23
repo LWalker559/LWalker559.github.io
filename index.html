@@ -7,34 +7,410 @@
         <title>GETTING STARTED WITH BRACKETS</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="main.css">
-        
-     $CENTER_STYLE
-$CREATEJS_LIBRARY_SCRIPTS
-$ANIMATE_CC_SCRIPTS
-$SCRIPT_START
+              
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"firsttry_atlas_", frames: [[1839,0,164,68],[1918,70,75,75],[1543,0,146,146],[1691,0,146,146],[1839,70,77,77],[780,762,988,460],[780,0,761,760],[0,0,778,1104]]}
+];
+// symbols:
+(lib.CachedBmp_9 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_8 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_6 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_3 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_5 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_1 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.b9 = function() {
+	this.initialize(img.b9);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2338,2339);
+(lib.face = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.ScreenShot20200307at214731 = function() {
+	this.initialize(ss["firsttry_atlas_"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.an_Video = function(options) {
+	this.initialize();
+	this._element = new $.an.Video(options);
+	this._el = this._element.create();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,400,300);
+p._tick = _tick;
+p._handleDrawEnd = _handleDrawEnd;
+p._updateVisibility = _updateVisibility;
+p.draw = _componentDraw;
+(lib.Symbol2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.dyn = new cjs.Text("Label", "12px 'Verdana'", "#333333");
+	this.dyn.name = "dyn";
+	this.dyn.lineHeight = 17;
+	this.dyn.lineWidth = 38;
+	this.dyn.parent = this;
+	this.dyn.setTransform(22.5,8.95);
+	this.instance = new lib.CachedBmp_9();
+	this.instance.setTransform(-0.5,-0.5,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.dyn}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,82,34);
+(lib.dot = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.CachedBmp_8();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.dot, new cjs.Rectangle(0,0,37.5,37.5), null);
+(lib.b2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_2
+	this.instance = new lib.dot();
+	this.instance.setTransform(34.85,72.05,1,1,0,0,0,18.8,18.8);
+	this.instance_1 = new lib.CachedBmp_5();
+	this.instance_1.setTransform(15.55,52.75,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1},{t:this.instance}]},1).wait(3));
+	// b1
+	this.text = new cjs.Text("Klicke hier für \nInformationen 2", "10px 'Verdana'", "#333333");
+	this.text.lineHeight = 14;
+	this.text.lineWidth = 51;
+	this.text.parent = this;
+	this.text.setTransform(13.05,11);
+	this.instance_2 = new lib.CachedBmp_6();
+	this.instance_2.setTransform(-0.5,-0.5,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.text}]}).wait(4));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,73,91.8);
+(lib.b1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_2
+	this.instance = new lib.dot();
+	this.instance.setTransform(34.85,72.05,1,1,0,0,0,18.8,18.8);
+	this.instance_1 = new lib.CachedBmp_5();
+	this.instance_1.setTransform(15.55,52.75,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1},{t:this.instance}]},1).wait(3));
+	// b1
+	this.text = new cjs.Text("Klicke hier für \nInformationen", "10px 'Verdana'", "#333333");
+	this.text.lineHeight = 14;
+	this.text.lineWidth = 51;
+	this.text.parent = this;
+	this.text.setTransform(12.05,10);
+	this.instance_2 = new lib.CachedBmp_3();
+	this.instance_2.setTransform(-0.5,-0.5,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.text}]}).wait(4));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-0.5,-0.5,73,91.8);
+// stage content:
+(lib.firsttry = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{label1:9,"label 2":19,"label 3":30});
+	// timeline functions:
+	this.frame_0 = function() {
+		var _this = this;
+		/*
+		Stop a Movie Clip/Video
+		Stops the specified movie clip or video.
+		*/
+		_this.stop();
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.btn_1.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop('label1');
+		});
+		var _this = this;
+		/*
+		Clicking on the specified symbol instance executes a function.
+		*/
+		_this.btn_2.on('click', function(){
+		/*
+		Moves the playhead to the specified frame label in the timeline and stops the movie.
+		Can be used on the main timeline or on movie clip timelines.
+		*/
+		_this.gotoAndStop('label 2');
+		});
+		this.playBtn.dyn.text = "Play";
+		this.pauseBtn.dyn.text = "Pause";
+		this.playBtn.addEventListener("click", fl_MouseClickHandler_2.bind(this));
+		function fl_MouseClickHandler_2()
+		{
+			$("#myvideo")[0].play();
+		}
+		this.pauseBtn.addEventListener("click", fl_MouseClickHandler_3.bind(this));
+		function fl_MouseClickHandler_3()
+		{
+			$("#myvideo")[0].pause();
+		}
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(49));
+	// content
+	this.instance = new lib.b9();
+	this.instance.setTransform(362,91,0.0845,0.1033);
+	this.instance_1 = new lib.face();
+	this.instance_1.setTransform(355,76,0.2589,0.2589);
+	this.instance_2 = new lib.ScreenShot20200307at214731();
+	this.instance_2.setTransform(375,111,0.1693,0.1693);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},9).to({state:[{t:this.instance_1}]},10).to({state:[{t:this.instance_2}]},11).wait(19));
+	// Video_button
+	this.pauseBtn = new lib.Symbol2();
+	this.pauseBtn.name = "pauseBtn";
+	this.pauseBtn.setTransform(128,570,1,1,0,0,0,40.5,16.5);
+	new cjs.ButtonHelper(this.pauseBtn, 0, 1, 1);
+	this.playBtn = new lib.Symbol2();
+	this.playBtn.name = "playBtn";
+	this.playBtn.setTransform(128,527,1,1,0,0,0,40.5,16.5);
+	new cjs.ButtonHelper(this.playBtn, 0, 1, 1);
+	this.dyn = new cjs.Text("Label 1", "12px 'Trebuchet MS'", "#333333");
+	this.dyn.name = "dyn";
+	this.dyn.lineHeight = 16;
+	this.dyn.lineWidth = 56;
+	this.dyn.parent = this;
+	this.dyn.setTransform(100,520);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.dyn},{t:this.playBtn},{t:this.pauseBtn}]}).wait(49));
+	// Video
+	this.myvideo = new lib.an_Video({'id': 'myvideo', 'src':'videos/AgriQnet%202020%20-%20DE_2.mp4', 'autoplay':false, 'controls':false, 'muted':false, 'loop':false, 'poster':'images/', 'preload':true, 'class':'video'});
+	this.myvideo.name = "myvideo";
+	this.myvideo.setTransform(401.15,512.3,0.6027,0.452,0,0,0,200,150);
+	this.text = new cjs.Text("Hast du schon gewusst, dass viele \nverschiedene Sorten in blabla.\n\nSchau dir dazu das Video an", "10px 'Verdana'", "#FFFFFF");
+	this.text.lineHeight = 14;
+	this.text.lineWidth = 187;
+	this.text.parent = this;
+	this.text.setTransform(83,447);
+	this.instance_3 = new lib.CachedBmp_1();
+	this.instance_3.setTransform(58,415,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.text},{t:this.myvideo}]}).wait(49));
+	// buttons
+	this.btn_2 = new lib.b2();
+	this.btn_2.name = "btn_2";
+	this.btn_2.setTransform(207.05,110.95);
+	new cjs.ButtonHelper(this.btn_2, 0, 1, 2, false, new lib.b2(), 3);
+	this.btn_1 = new lib.b1();
+	this.btn_1.name = "btn_1";
+	this.btn_1.setTransform(91.05,110.95);
+	new cjs.ButtonHelper(this.btn_1, 0, 1, 2, false, new lib.b1(), 3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.btn_1},{t:this.btn_2}]}).wait(49));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(358,526,201.60000000000002,119);
+// library properties:
+lib.properties = {
+	id: 'A1237F7C954E4BB2B810FAABA41BC56C',
+	width: 600,
+	height: 900,
+	fps: 24,
+	color: "#333333",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/b9.jpg", id:"b9"},
+		{src:"images/firsttry_atlas_.png", id:"firsttry_atlas_"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js", id:"sdk/anwidget.js"},
+		{src:"components/video/src/video.js", id:"an.Video"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.StageGL();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['A1237F7C954E4BB2B810FAABA41BC56C'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}			
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;			
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});			
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;			
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+function _updateVisibility(evt) {
+	if((this.stage == null || this._off || this._lastAddedFrame != this.parent.currentFrame) && this._element && this._element._attached) {
+		this._element.detach();
+		stage.removeEventListener('drawstart', this._updateVisibilityCbk);
+		this._updateVisibilityCbk = false;
+	}
+}
+function _handleDrawEnd(evt) {
+	var props = this.getConcatenatedDisplayProps(this._props), mat = props.matrix;
+	var tx1 = mat.decompose(); var sx = tx1.scaleX; var sy = tx1.scaleY;
+	var dp = window.devicePixelRatio || 1; var w = this.nominalBounds.width * sx; var h = this.nominalBounds.height * sy;
+	mat.tx/=dp;mat.ty/=dp; mat.a/=(dp*sx);mat.b/=(dp*sx);mat.c/=(dp*sy);mat.d/=(dp*sy);
+	this._element.setProperty('transform-origin', this.regX + 'px ' + this.regY + 'px');
+	var x = (mat.tx + this.regX*mat.a + this.regY*mat.c - this.regX);
+	var y = (mat.ty + this.regX*mat.b + this.regY*mat.d - this.regY);
+	var tx = 'matrix(' + mat.a + ',' + mat.b + ',' + mat.c + ',' + mat.d + ',' + x + ',' + y + ')';
+	this._element.setProperty('transform', tx);
+	this._element.setProperty('width', w);
+	this._element.setProperty('height', h);
+	this._element.update();
+}
+function _tick(evt) {
+	this._lastAddedFrame = this.parent.currentFrame;
+	var stage = this.stage;
+	stage&&stage.on('drawend', this._handleDrawEnd, this, true);
+	if(!this._updateVisibilityCbk) {
+		this._updateVisibilityCbk = stage.on('drawstart', this._updateVisibility, this, false);
+	}
+}
+function _componentDraw(ctx) {
+	if(this._element && !this._element._attached) {
+		this._element.attach($('#dom_overlay_container'));
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
-	canvas = document.getElementById("$CANVAS_ID");
-	anim_container = document.getElementById("$ANIM_CONTAINER_ID");
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	$CREATE_LOADER
-	$LOAD_MANIFEST
-	$PRELOAD_ASSETS
+	var comp=AdobeAn.getComposition("A1237F7C954E4BB2B810FAABA41BC56C");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
 }
-$HANDLE_FILE_LOAD_START	
-	$HANDLE_FILE_LOAD_BODY	
-$HANDLE_FILE_LOAD_END
-$HANDLE_COMPLETE_START
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	$CREATE_STAGE	
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.firsttry();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
-	$START_ANIMATION	    
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
 	//Code to support hidpi screens and responsive scaling.
-	$RESP_HIDPI	
-$HANDLE_COMPLETE_END
-$PLAYSOUND
-$SCRIPT_END         
-        
+	AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>      
     
     </head>
     <body onload="init();">
