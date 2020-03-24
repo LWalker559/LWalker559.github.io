@@ -421,7 +421,12 @@ function handleComplete(evt,comp) {
         <!--
             MADE WITH <3 AND JAVASCRIPT
         -->
-        
+                <div id="animation_container" style="background-color:rgba(51, 51, 51, 1.00); width:600px; height:900px">
+		<canvas id="canvas" width="600" height="900" style="position: absolute; display: block; background-color:rgba(51, 51, 51, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:600px; height:900px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+                    
         <p>
             Welcome to Brackets, a modern open-source code editor that understands web design. It's a lightweight,
             yet powerful, code editor that blends visual tools into the editor so you get the right amount of help
@@ -432,10 +437,7 @@ function handleComplete(evt,comp) {
             WHAT IS BRACKETS?
         -->
         
-        <div id="$ANIM_CONTAINER_ID" style="background-color:$BG; width:$WTpx; height:$HTpx">
-		<canvas id="$CANVAS_ID" width="$WT" height="$HT" style="position: absolute; display: $CANVAS_DISP; background-color:$BG;"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:$WTpx; height:$HTpx; position: absolute; left: 0px; top: 0px; display: $CANVAS_DISP;">
-		</div>
+
         
         <p>
             <em>Brackets is a different type of editor.</em>
