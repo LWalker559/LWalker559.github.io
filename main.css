@@ -12,9 +12,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1280px;
     padding: 2em 2em 4em;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     color: #222;
@@ -45,6 +46,16 @@ img {
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
+    max-width: 95%;
+}
+
+video {
+ animation: colorize 0s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: inline-flex;
+    margin: 0 em auto;
     max-width: 95%;
 }
 
